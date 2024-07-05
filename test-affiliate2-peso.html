@@ -29,7 +29,15 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- Affiliate SAAS -->
   <script src="https://static.affiliatly.com/v3/affiliatly.js?affiliatly_code=AF-1068506"></script>
-
+  <script>var affi_id_order = '##YOUR-ORDER-ID##';
+    var affi_order_price = '##YOUR-ORDER-PRICE##';
+    var affi_order_coupons = '##YOUR-ORDER-USED-COUPON##';
+    var url_affi = "https://static.affiliatly.com/v3/affiliatly.js?affiliatly_code=AF-1068506&conversion=1&id_order="+ encodeURIComponent( affi_id_order ) + "&order_price="+ affi_order_price +"&order_coupons=" + affi_order_coupons;
+    var script_affi = document.createElement("script");
+    script_affi.type = "text/javascript";
+    script_affi.src = url_affi;
+    document.getElementsByTagName("head")[0].appendChild(script_affi);
+    </script>
   <!-- =======================================================
   * Template Name: Remember
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
